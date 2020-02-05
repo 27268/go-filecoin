@@ -135,6 +135,8 @@ github.com/filecoin-project/go-address v0.0.0-20191219011437-af739c490b4f h1:L2j
 github.com/filecoin-project/go-address v0.0.0-20191219011437-af739c490b4f/go.mod h1:rCbpXPva2NKF9/J4X6sr7hbKBgQCxyFtRj7KOZqoIms=
 github.com/filecoin-project/go-amt-ipld v0.0.0-20190920035751-ae3c37184616 h1:e0P1b9Lam9oA7TC/YBoR23uMsDuMLQU3iTvUJXmDaqM=
 github.com/filecoin-project/go-amt-ipld v0.0.0-20190920035751-ae3c37184616/go.mod h1:lKjJYPg2kwbav5f78i5YA8kGccnZn18IySbpneXvaQs=
+github.com/filecoin-project/go-bls-sigs v0.0.0-20191126221701-443b5348d38e h1:pDR6sIedVzB3WiSmPrP+glqU9vYxy/381DxxAWlNQ4Q=
+github.com/filecoin-project/go-bls-sigs v0.0.0-20191126221701-443b5348d38e/go.mod h1:y5euLUNwRkoJSdnkDi5ZxFzrysgu1JkSRfwotVM87PE=
 github.com/filecoin-project/go-cbor-util v0.0.0-20191219014500-08c40a1e63a2 h1:av5fw6wmm58FYMgJeoB/lK9XXrgdugYiTqkdxjTy9k8=
 github.com/filecoin-project/go-cbor-util v0.0.0-20191219014500-08c40a1e63a2/go.mod h1:pqTiPHobNkOVM5thSRsHYjyQfq7O5QSCMhvuu9JoDlg=
 github.com/filecoin-project/go-crypto v0.0.0-20191218222705-effae4ea9f03 h1:2pMXdBnCiXjfCYx/hLqFxccPoqsSveQFxVLvNxy9bus=
@@ -147,6 +149,7 @@ github.com/filecoin-project/go-fil-markets v0.0.0-20200128011124-cd7aa319b99b h1
 github.com/filecoin-project/go-fil-markets v0.0.0-20200128011124-cd7aa319b99b/go.mod h1:hbYlEmbOg9QwhZ71B724oAgXQ0wnoWHj8S+33q9lrm8=
 github.com/filecoin-project/go-leb128 v0.0.0-20190212224330-8d79a5489543 h1:aMJGfgqe1QDhAVwxRg5fjCRF533xHidiKsugk7Vvzug=
 github.com/filecoin-project/go-leb128 v0.0.0-20190212224330-8d79a5489543/go.mod h1:mjrHv1cDGJWDlGmC0eDc1E5VJr8DmL9XMUcaFwiuKg8=
+github.com/filecoin-project/go-padreader v0.0.0-20200130212543-892867c4edf9 h1:CQsjS+oWG96rk5YbeKpPw84fhbgc5H6/BGvrlPgd63A=
 github.com/filecoin-project/go-padreader v0.0.0-20200130212543-892867c4edf9/go.mod h1:r0gyD7zvnqyRKSY8stil5G/LF0kXFgNzW/yR4vjga+Y=
 github.com/filecoin-project/go-paramfetch v0.0.0-20200102181131-b20d579f2878 h1:YicJT9xhPzZ1SBGiJFNUCkfwqK/G9vFyY1ytKBSjNJA=
 github.com/filecoin-project/go-paramfetch v0.0.0-20200102181131-b20d579f2878/go.mod h1:40kI2Gv16mwcRsHptI3OAV4nlOEU7wVDc4RgMylNFjU=

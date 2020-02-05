@@ -6,7 +6,6 @@ import (
 
 	"github.com/ipfs/go-cid"
 	"github.com/ipfs/go-ipfs-cmdkit"
-	cmdkit "github.com/ipfs/go-ipfs-cmdkit"
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	files "github.com/ipfs/go-ipfs-files"
 
@@ -125,34 +124,34 @@ be 2, 1 hour would be 120, and 1 day would be 2880.
 	Run: func(req *cmds.Request, re cmds.ResponseEmitter, env cmds.Environment) error {
 		panic("TODO: go-fil-markets integration")
 
-		//allowDuplicates, _ := req.Options["allow-duplicates"].(bool)
+		// allowDuplicates, _ := req.Options["allow-duplicates"].(bool)
 		//
-		//miner, err := address.NewFromString(req.Arguments[0])
-		//if err != nil {
+		// miner, err := address.NewFromString(req.Arguments[0])
+		// if err != nil {
 		//	return err
-		//}
+		// }
 		//
-		//data, err := cid.Decode(req.Arguments[1])
-		//if err != nil {
+		// data, err := cid.Decode(req.Arguments[1])
+		// if err != nil {
 		//	return err
-		//}
+		// }
 		//
-		//askid, err := strconv.ParseUint(req.Arguments[2], 10, 64)
-		//if err != nil {
+		// askid, err := strconv.ParseUint(req.Arguments[2], 10, 64)
+		// if err != nil {
 		//	return err
-		//}
+		// }
 		//
-		//duration, err := strconv.ParseUint(req.Arguments[3], 10, 64)
-		//if err != nil {
+		// duration, err := strconv.ParseUint(req.Arguments[3], 10, 64)
+		// if err != nil {
 		//	return err
-		//}
+		// }
 		//
-		//resp, err := GetStorageAPI(env).ProposeStorageDeal()
-		//if err != nil {
+		// resp, err := GetStorageAPI(env).ProposeStorageDeal()
+		// if err != nil {
 		//	return err
-		//}
+		// }
 		//
-		//return re.Emit(resp)
+		// return re.Emit(resp)
 
 		return nil
 	},
@@ -182,17 +181,17 @@ format is specified with the --enc flag.
 	Run: func(req *cmds.Request, re cmds.ResponseEmitter, env cmds.Environment) error {
 		panic("TODO: go-fil-markets integration")
 
-		//propcid, err := cid.Decode(req.Arguments[0])
-		//if err != nil {
+		// propcid, err := cid.Decode(req.Arguments[0])
+		// if err != nil {
 		//	return err
-		//}
+		// }
 		//
-		//resp, err := GetStorageAPI(env).QueryStorageDeal(req.Context, propcid)
-		//if err != nil {
+		// resp, err := GetStorageAPI(env).QueryStorageDeal(req.Context, propcid)
+		// if err != nil {
 		//	return err
-		//}
+		// }
 		//
-		//return re.Emit(resp)
+		// return re.Emit(resp)
 
 		return nil
 	},
@@ -225,23 +224,23 @@ is invalid.  Returns nil otherwise.
 	Run: func(req *cmds.Request, re cmds.ResponseEmitter, env cmds.Environment) error {
 		panic("TODO: go-fil-markets integration")
 
-		//proposalCid, err := cid.Decode(req.Arguments[0])
-		//if err != nil {
+		// proposalCid, err := cid.Decode(req.Arguments[0])
+		// if err != nil {
 		//	return err
-		//}
+		// }
 		//
-		//resp, err := GetStorageAPI(env).QueryStorageDeal(req.Context, proposalCid)
-		//if err != nil {
+		// resp, err := GetStorageAPI(env).QueryStorageDeal(req.Context, proposalCid)
+		// if err != nil {
 		//	return err
-		//}
+		// }
 		//
-		//if resp.State != storagedeal.Complete {
+		// if resp.State != storagedeal.Complete {
 		//	return errors.New("storage deal not in Complete state")
-		//}
+		// }
 		//
-		//validateError := GetPorcelainAPI(env).ClientValidateDeal(req.Context, proposalCid, resp.ProofInfo)
+		// validateError := GetPorcelainAPI(env).ClientValidateDeal(req.Context, proposalCid, resp.ProofInfo)
 		//
-		//return re.Emit(VerifyStorageDealResult{validateError == nil})
+		// return re.Emit(VerifyStorageDealResult{validateError == nil})
 
 		return nil
 	},
@@ -291,17 +290,17 @@ var paymentsCmd = &cmds.Command{
 	Run: func(req *cmds.Request, re cmds.ResponseEmitter, env cmds.Environment) error {
 		panic("TODO: go-fil-markets integration")
 
-		//dealCid, err := cid.Decode(req.Arguments[0])
-		//if err != nil {
+		// dealCid, err := cid.Decode(req.Arguments[0])
+		// if err != nil {
 		//	return fmt.Errorf("invalid channel id")
-		//}
+		// }
 		//
-		//vouchers, err := GetStorageAPI(env).Payments(req.Context, dealCid)
-		//if err != nil {
+		// vouchers, err := GetStorageAPI(env).Payments(req.Context, dealCid)
+		// if err != nil {
 		//	return err
-		//}
+		// }
 		//
-		//return re.Emit(vouchers)
+		// return re.Emit(vouchers)
 
 		return nil
 	},

@@ -8,7 +8,6 @@ import (
 	"runtime"
 
 	a2 "github.com/filecoin-project/go-address"
-	"github.com/filecoin-project/go-fil-markets/piecestore"
 	"github.com/filecoin-project/go-sectorbuilder"
 	bserv "github.com/ipfs/go-blockservice"
 	"github.com/ipfs/go-cid"
@@ -130,7 +129,7 @@ func (node *Node) Start(ctx context.Context) error {
 	}
 
 	// DRAGONS: uncomment when we have retrieval market integration
-	//node.RetrievalProtocol.RetrievalProvider = retrieval.NewMiner()
+	// node.RetrievalProtocol.RetrievalProvider = retrieval.NewMiner()
 
 	var syncCtx context.Context
 	syncCtx, node.syncer.CancelChainSync = context.WithCancel(context.Background())
@@ -438,10 +437,10 @@ func (node *Node) setupStorageMining(ctx context.Context) error {
 
 	node.StorageMining = &sub
 
-	node.RetrievalProtocol, err = submodule.NewRetrievalProtocolSubmodule(node.Host(), minerAddr2, piecestore.NewPieceStore(node.Repo.Datastore()), node.Blockstore.Blockstore)
-	if err != nil {
-		return err
-	}
+	// node.RetrievalProtocol, err = submodule.NewRetrievalProtocolSubmodule(node.Host(), minerAddr2, piecestore.NewPieceStore(node.Repo.Datastore()), node.Blockstore.Blockstore)
+	// if err != nil {
+	// 	return err
+	// }
 	return nil
 }
 
@@ -572,14 +571,14 @@ func (node *Node) setupProtocols() error {
 
 	// set up retrieval client and api
 	// DRAGONS: uncomment when we have a real retrieval client implementation
-	//retapi := retrieval.NewAPI(retrieval.NewClient())
-	//node.RetrievalProtocol.RetrievalAPI = &retapi
+	// retapi := retrieval.NewAPI(retrieval.NewClient())
+	// node.RetrievalProtocol.RetrievalAPI = &retapi
 
 	// set up storage client and api
 	// DRAGONS: uncomment when we have a storage market
-	//smc := storage.NewClient()
-	//smcAPI := storage.NewAPI(smc)
-	//node.StorageProtocol.StorageClientAPI = &smcAPI
+	// smc := storage.NewClient()
+	// smcAPI := storage.NewAPI(smc)
+	// node.StorageProtocol.StorageClientAPI = &smcAPI
 	return nil
 }
 

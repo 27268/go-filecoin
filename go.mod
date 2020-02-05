@@ -18,6 +18,7 @@ require (
 	github.com/filecoin-project/filecoin-ffi v0.0.0-20191221090835-c7bbef445934
 	github.com/filecoin-project/go-address v0.0.0-20191219011437-af739c490b4f
 	github.com/filecoin-project/go-amt-ipld v0.0.0-20190920035751-ae3c37184616
+	github.com/filecoin-project/go-bls-sigs v0.0.0-20191126221701-443b5348d38e
 	github.com/filecoin-project/go-data-transfer v0.0.0-20191219005021-4accf56bd2ce
 	github.com/filecoin-project/go-fil-markets v0.0.0-20200128011124-cd7aa319b99b
 	github.com/filecoin-project/go-leb128 v0.0.0-20190212224330-8d79a5489543
@@ -116,7 +117,7 @@ require (
 	golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543
 	google.golang.org/api v0.13.0 // indirect
 	google.golang.org/appengine v1.6.5 // indirect
-	google.golang.org/genproto v0.0.0-20191028173616-919d9bdd9fe6 // indirect
+	google.golang.org/genproto v0.0.0-20191028173616-919d9bdd9fe6
 	google.golang.org/grpc v1.24.0 // indirect
 	gopkg.in/urfave/cli.v2 v2.0.0-20180128182452-d3ae77c26ac8
 	gopkg.in/yaml.v2 v2.2.5 // indirect
