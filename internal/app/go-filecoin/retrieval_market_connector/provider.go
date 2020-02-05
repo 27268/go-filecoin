@@ -17,7 +17,7 @@ import (
 type RetrievalProviderConnector struct {
 	vs  map[string]voucherEntry
 	ps  piecestore.PieceStore
-	bs  *blockstore.Blockstore
+	bs  blockstore.Blockstore
 	net rmnet.RetrievalMarketNetwork
 }
 
@@ -31,7 +31,7 @@ type voucherEntry struct {
 }
 
 
-func NewRetrievalProviderNodeConnector(network rmnet.RetrievalMarketNetwork, pieceStore piecestore.PieceStore, bs *blockstore.Blockstore) *RetrievalProviderConnector {
+func NewRetrievalProviderNodeConnector(network rmnet.RetrievalMarketNetwork, pieceStore piecestore.PieceStore, bs blockstore.Blockstore) *RetrievalProviderConnector {
 	return &RetrievalProviderConnector{
 		vs:  make(map[string]voucherEntry),
 		ps:  pieceStore,
