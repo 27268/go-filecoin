@@ -7,19 +7,17 @@ import (
 	"github.com/filecoin-project/go-address"
 	"github.com/filecoin-project/go-fil-markets/shared/tokenamount"
 	t2 "github.com/filecoin-project/go-fil-markets/shared/types"
-	sm "github.com/filecoin-project/go-fil-markets/storagemarket"
+	"github.com/filecoin-project/go-fil-markets/storagemarket"
 	"github.com/ipfs/go-cid"
 )
 
 type StorageProviderNodeConnector struct{}
 
-var _ sm.StorageProviderNode = &StorageProviderNodeConnector{}
-
 func NewStorageProviderNodeConnector() *StorageProviderNodeConnector {
 	return &StorageProviderNodeConnector{}
 }
 
-func (s *StorageProviderNodeConnector) MostRecentStateId(ctx context.Context) (sm.StateKey, error) {
+func (s *StorageProviderNodeConnector) MostRecentStateId(ctx context.Context) (storagemarket.StateKey, error) {
 	panic("TODO: go-fil-markets integration")
 }
 
@@ -31,19 +29,19 @@ func (s *StorageProviderNodeConnector) EnsureFunds(ctx context.Context, addr add
 	panic("TODO: go-fil-markets integration")
 }
 
-func (s *StorageProviderNodeConnector) GetBalance(ctx context.Context, addr address.Address) (sm.Balance, error) {
+func (s *StorageProviderNodeConnector) GetBalance(ctx context.Context, addr address.Address) (storagemarket.Balance, error) {
 	panic("TODO: go-fil-markets integration")
 }
 
-func (s *StorageProviderNodeConnector) PublishDeals(ctx context.Context, deal sm.MinerDeal) (sm.DealID, cid.Cid, error) {
+func (s *StorageProviderNodeConnector) PublishDeals(ctx context.Context, deal storagemarket.MinerDeal) (storagemarket.DealID, cid.Cid, error) {
 	panic("TODO: go-fil-markets integration")
 }
 
-func (s *StorageProviderNodeConnector) ListProviderDeals(ctx context.Context, addr address.Address) ([]sm.StorageDeal, error) {
+func (s *StorageProviderNodeConnector) ListProviderDeals(ctx context.Context, addr address.Address) ([]storagemarket.StorageDeal, error) {
 	panic("TODO: go-fil-markets integration")
 }
 
-func (s *StorageProviderNodeConnector) OnDealComplete(ctx context.Context, deal sm.MinerDeal, pieceSize uint64, pieceReader io.Reader) error {
+func (s *StorageProviderNodeConnector) OnDealComplete(ctx context.Context, deal storagemarket.MinerDeal, pieceSize uint64, pieceReader io.Reader) (uint64, error) {
 	panic("TODO: go-fil-markets integration")
 }
 
@@ -55,7 +53,7 @@ func (s *StorageProviderNodeConnector) SignBytes(ctx context.Context, signer add
 	panic("TODO: go-fil-markets integration")
 }
 
-func (s *StorageProviderNodeConnector) OnDealSectorCommitted(ctx context.Context, provider address.Address, dealID uint64, cb sm.DealSectorCommittedCallback) error {
+func (s *StorageProviderNodeConnector) OnDealSectorCommitted(ctx context.Context, provider address.Address, dealID uint64, cb storagemarket.DealSectorCommittedCallback) error {
 	panic("TODO: go-fil-markets integration")
 }
 
