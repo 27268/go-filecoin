@@ -1,5 +1,5 @@
 // Package builtin implements the predefined actors in Filecoin.
-package builtin
+package actor
 
 import (
 	"fmt"
